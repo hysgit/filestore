@@ -1,0 +1,26 @@
+[user]
+	name = huangyue
+	email = hy@zizizizizi.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	aa = add -A
+	cm = commit -m
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	c = "!git add -A;git commit -m "
+[core]
+	quotepath = false
+	editor = vim
+[i18n]
+	commitencoding = UTF-8
+	logoutputencoding = gbk
+[credential]
+	helper = store
+[http]
+	sslverify = true
+[gui]
+	encoding = utf-8
