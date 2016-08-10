@@ -7,4 +7,4 @@ cp  ~/.git-credentials .
 cp  ~/.bashrc .
 cp  /etc/profile .
 cp  ~/.vimrc .
-
+cp /etc/samba/smb.conf .
