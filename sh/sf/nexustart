@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /home/hy/soft/nexus-2.13/nexus-2.13.0-01/bin
+./nexus start

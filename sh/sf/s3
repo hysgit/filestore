@@ -1,0 +1,2 @@
+cd /home/hy/soft/sublime_text_3
+LD_PRELOAD=/home/hy/soft/sublime_text_3/libsublime-imfix.so exec ./sublime_text "$@"

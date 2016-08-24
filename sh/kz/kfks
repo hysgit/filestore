@@ -1,0 +1,10 @@
+#!/bin/bash
+cd /opt/kafka/kafka1
+./bin/kafka-server-start.sh -daemon ./config/server.properties
+
+cd /opt/kafka/kafka2
+./bin/kafka-server-start.sh -daemon ./config/server.properties
+
+cd /opt/kafka/kafka3
+./bin/kafka-server-start.sh -daemon ./config/server.properties
+

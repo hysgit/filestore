@@ -1,0 +1,21 @@
+#!/bin/bash
+cd /opt/zookeeper/zookeeper1
+./bin/zkServer.sh start
+
+cd /opt/zookeeper/zookeeper2
+./bin/zkServer.sh start
+
+cd /opt/zookeeper/zookeeper3
+./bin/zkServer.sh start
+
+echo "waiting for zookeeper start...."
+sleep 2s
+
+cd /opt/zookeeper/zookeeper1
+./bin/zkServer.sh status
+
+cd /opt/zookeeper/zookeeper2
+./bin/zkServer.sh status
+
+cd /opt/zookeeper/zookeeper3
+./bin/zkServer.sh status

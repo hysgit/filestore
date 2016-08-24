@@ -1,0 +1,2 @@
+cd /home/hy/soft/activemq5.13/bin/linux-x86-64 
+./activemq stop

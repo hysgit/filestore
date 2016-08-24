@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo /usr/local/host-switcher/host-switcher

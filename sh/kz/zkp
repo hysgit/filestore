@@ -1,0 +1,10 @@
+#!/bin/bash
+cd /opt/zookeeper/zookeeper1
+./bin/zkServer.sh stop
+
+cd /opt/zookeeper/zookeeper2
+./bin/zkServer.sh stop
+
+cd /opt/zookeeper/zookeeper3
+./bin/zkServer.sh stop
+

@@ -1,0 +1,2 @@
+#!/bin/sh
+/home/hy/soft/mongodb/bin/mongod
