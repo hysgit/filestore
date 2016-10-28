@@ -127,11 +127,13 @@ export PATH=$PATH:/home/hy/sh/sf
 
 export GOROOT=$HOME/soft/go
 export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:/opt/sbt/bin
+#
+#export ENV_SERVER_IP=127.0.0.1
+#export ENV_SERVER_PORT=10000
+#export ENV_SERVER_REAL_PORT=10000
 
 alias ll='ls -la'
-#export https_proxy=127.0.0.1:8087
-
-#export http_proxy=127.0.0.1:8087
 
 function git_branch {
   branch="`git branch 2>/dev/null | grep "^\*" | sed -e "s/^\*\ //"`"
@@ -145,7 +147,13 @@ function git_branch {
 
 export PS1='\[\033[01;32m\]\u@\h\[\033[00m\][\[\033[01;36m\]\W\[\033[01;32m\]$(git_branch)\[\033[00m\]]\$ '
 
+#alias define
 alias gc='git add -A;git commit -m '
+alias scala="scala -Dscala.color=true"
 
 
+EDITOR=vim; export EDITOR
 #export LANG="zh_CN.UTF-8" 
+#export http_proxy="http://192.168.1.128:1080/"
+
+
