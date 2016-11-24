@@ -133,7 +133,7 @@ export PATH=$PATH:/opt/sbt/bin
 #export ENV_SERVER_PORT=10000
 #export ENV_SERVER_REAL_PORT=10000
 
-alias ll='ls -la'
+alias ll='ls -lah'
 
 function git_branch {
   branch="`git branch 2>/dev/null | grep "^\*" | sed -e "s/^\*\ //"`"
@@ -154,6 +154,7 @@ alias scala="scala -Dscala.color=true"
 
 EDITOR=vim; export EDITOR
 #export LANG="zh_CN.UTF-8" 
-#export http_proxy="http://192.168.1.128:1080/"
+#export http_proxy="http://192.168.1.140:1080/"
+#export http_proxy="http://192.168.0.106:1080/"
 
-
+xmodmap ~/.xmodmap-`uname -n`
