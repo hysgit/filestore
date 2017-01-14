@@ -1,0 +1,32 @@
+#!/bin/bash
+
+sudo iptables -t nat -N SHADOWSOCKS
+
+# 在 nat 表中创建新链
+sudo iptables -t nat -A SHADOWSOCKS -p tcp --dport 9527 -j RETURN
+
+# 9527 是 ss 代理服务器的端口，即远程 shadowsocks 服务器提供服务的端口，如果你有多个 ip 可用,但端口一致，就设置这个
+
+sudo iptables -t nat -A SHADOWSOCKS -d 192.168.1.121 -j RETURN  
+# 123.456.789.111 是 ss 代理服务器的 ip, 如果你只有一个 ss服务器的 ip，却能选择不同端口,就设置此条
+
+sudo iptables -t nat -A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN  
+sudo iptables -t nat -A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN  
+sudo iptables -t nat -A SHADOWSOCKS -d 127.0.0.0/8 -j RETURN  
+sudo iptables -t nat -A SHADOWSOCKS -d 169.254.0.0/16 -j RETURN  
+sudo iptables -t nat -A SHADOWSOCKS -d 172.16.0.0/12 -j RETURN  
+sudo iptables -t nat -A SHADOWSOCKS -d 192.168.0.0/16 -j RETURN  
+sudo iptables -t nat -A SHADOWSOCKS -d 224.0.0.0/4 -j RETURN  
+sudo iptables -t nat -A SHADOWSOCKS -d 240.0.0.0/4 -j RETURN
+
+sudo iptables -t nat -A SHADOWSOCKS -p tcp -j REDIRECT --to-ports 1080  
+# 1080 是 ss-redir 的监听端口,ss-local 和 ss-redir 的监听端口不同,配置文件不同-libev/config.json
+
+#如果是在openwrt上实现透明代理的话,使用下面被注释了的规则
+
+sudo iptables -t nat -I PREROUTING -p tcp -j SHADOWSOCKS  
+# 在 PREROUTING 链前插入 SHADOWSOCKS 链,使其生效
+
+#在个人电脑上使用以下配置
+sudo iptables -t nat -A OUTPUT -p tcp -j SHADOWSOCKS  
+

@@ -34,9 +34,10 @@
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is -->
+    <primaryMonitor>Mouse</primaryMonitor>
   </placement>
   <theme>
-    <name>Onyx</name>
+    <name>Shiny</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -286,7 +287,7 @@
           <name>Nemo:</name>
         </startupnotify>
         <!--<command>pcmanfm</command>-->
-		<command>nemo</command>
+        <command>nemo</command>
       </action>
     </keybind>
     <!--keybindings for LXPanel -->

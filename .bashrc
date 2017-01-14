@@ -111,12 +111,14 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+#java
 export JAVA_HOME=/opt/java/jdk1.8.0_72
 export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 export PATH=${JAVA_HOME}/bin:$PATH
 
-
+#maven
 export MAVEN_HOME=/opt/maven3
 export MAVEN_PATH=$MAVEN_HOME/bin
 export PATH=$MAVEN_PATH:$PATH
@@ -125,13 +127,13 @@ alias git='LANG=en_GB git'
 
 export PATH=$PATH:/home/hy/sh/sf
 
+#go
 export GOROOT=$HOME/soft/go
+export GOPATH=/home/hy/workspace/go/wrk1
 export PATH=$PATH:$GOROOT/bin
+
+#sbt
 export PATH=$PATH:/opt/sbt/bin
-#
-#export ENV_SERVER_IP=127.0.0.1
-#export ENV_SERVER_PORT=10000
-#export ENV_SERVER_REAL_PORT=10000
 
 alias ll='ls -lah'
 
@@ -158,3 +160,11 @@ EDITOR=vim; export EDITOR
 #export http_proxy="http://192.168.0.106:1080/"
 
 xmodmap ~/.xmodmap-`uname -n`
+
+#hadoop
+export HADOOP_HOME=/home/hy/soft/hadoop-2.6.5
+export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+
+
+# added by Anaconda2 4.2.0 installer
+#export PATH="/home/hy/soft/anaconda2/bin:$PATH"

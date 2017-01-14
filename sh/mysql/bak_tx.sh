@@ -2,7 +2,7 @@
 #Shell Command For Backup MySQL Database Everyday Automatically By Crontab  
    
 USER=root  
-PASSWORD="mysqlxac"  
+PASSWORD='xcp^!#.0ZO-_@'
 DATABASE="rep"  
 HOSTNAME="182.254.152.12"  
    

@@ -1,0 +1,4 @@
+#!/bin/bash
+ssh c1 -t "shutdown -P now"
+ssh c2 -t "shutdown -P now"
+ssh c3 -t "shutdown -P now"
