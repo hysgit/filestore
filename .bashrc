@@ -156,8 +156,8 @@ alias scala="scala -Dscala.color=true"
 
 EDITOR=vim; export EDITOR
 #export LANG="zh_CN.UTF-8" 
-export http_proxy="http://192.168.99.238:1080"
-export https_proxy="http://192.168.99.238:1080"
+#export http_proxy="http://192.168.99.238:1080"
+#export https_proxy="http://192.168.99.238:1080"
 
 #xmodmap ~/.xmodmap-`uname -n`
 
