@@ -9,3 +9,4 @@ cp  /etc/profile .
 cp  ~/.vimrc .
 cp /etc/samba/smb.conf .
 cp -r ~/sh .
+cp ~/.emacs .

@@ -1,0 +1,4 @@
+#!/bin/bash
+export LC_CTYPE=zh_CN.UTF-8
+/usr/local/emacs/bin/emacs "$@" &
+

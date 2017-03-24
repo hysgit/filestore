@@ -111,7 +111,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
+export PATH=$PATH:/usr/local/emacs/bin
 #java
 export JAVA_HOME=/opt/java/jdk1.8.0_72
 export JRE_HOME=${JAVA_HOME}/jre
@@ -124,12 +124,13 @@ export MAVEN_PATH=$MAVEN_HOME/bin
 export PATH=$MAVEN_PATH:$PATH
 
 alias git='LANG=en_GB git'
+alias emacs="export LC_CTYPE=zh_CN.UTF-8;emacs -nw"
 
 export PATH=$PATH:/home/hy/sh/sf
 
 #go
 export GOROOT=$HOME/soft/go
-export GOPATH=/home/hy/workspace/go/wrk1
+export GOPATH=/home/hy/soft/sharego
 export PATH=$PATH:$GOROOT/bin
 
 #sbt
@@ -168,3 +169,5 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 # added by Anaconda2 4.2.0 installer
 #export PATH="/home/hy/soft/anaconda2/bin:$PATH"
+
+bbkj=/home/hy/workspace/company/bbkj
