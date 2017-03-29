@@ -171,3 +171,19 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 #export PATH="/home/hy/soft/anaconda2/bin:$PATH"
 
 bbkj=/home/hy/workspace/company/bbkj
+
+function cd () {
+  if [[ $# > 0 ]]; then
+    if [ ${1:0:2} == '..' ]; then
+      rest=${1:2}
+      rest=${rest//./../}
+      builtin cd "${1:0:2}/${rest}"
+    else
+      builtin cd "$1"
+    fi
+  else
+    builtin cd
+  fi
+}
+
+alias c='.   /home/hy/sh/sf/fastcd.sh'
