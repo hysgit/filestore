@@ -172,6 +172,7 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 bbkj=/home/hy/workspace/company/bbkj
 
+
 function cd () {
   if [[ $# > 0 ]]; then
     if [ ${1:0:2} == '..' ]; then
@@ -186,4 +187,6 @@ function cd () {
   fi
 }
 
-alias c='.   /home/hy/sh/sf/fastcd.sh'
+
+
+

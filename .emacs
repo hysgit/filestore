@@ -1,6 +1,5 @@
 (setq inhibit-startup-message t)
 
-
 (setq initial-frame-alist '((top . 200) (left . 300)))
 (setq initial-scratch-message "")
 
@@ -31,11 +30,6 @@
 
 ;;以y/n 代替 yes/no
 (fset 'yes-or-no-p 'y-or-n-p)
-
-;;设置tab为4个空格的宽度
-(setq default-tab-width 4)
-
-(setq-default indent-tabs-mode nil)
 
 
 ;;去掉菜单,去掉工具栏,去掉滚动条
@@ -129,4 +123,11 @@ xsel-output )))
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;;设置tab为4个空格的宽度
+(global-set-key (kbd "TAB") 'tab-to-tab-stop)
+(setq-default indent-tabs-mode nil)
+(setq default-tab-width 4)
+
+
 
