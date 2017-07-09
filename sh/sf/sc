@@ -25,17 +25,9 @@
 # 	echo "open proxy...."
 # fi
 
-if [ "$1" == "open" ]; then 
-	sudo route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.105
-	sudo route del -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.1
-	sudo cp /etc/resolv.conf.l /etc/resolvconf/run/resolv.conf
-	echo 'open proxy....'
-fi
-if [ "$1" == "close" ]; then 
-	sudo route del -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.105
-	sudo route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.1
-	sudo cp /etc/resolv.conf.c /etc/resolvconf/run/resolv.conf
-	echo 'close proxy...'
-fi
+sudo route del -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.105
+sudo route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.1
+sudo cp /etc/resolv.conf.c /etc/resolvconf/run/resolv.conf
+echo 'close proxy...'
 
 

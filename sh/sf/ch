@@ -1,3 +1,3 @@
 #!/bin/bash
-exec /usr/bin/google-chrome-stable %U
+exec /usr/bin/google-chrome-stable %U --ppapi-flash-path=/home/hy/.config/google-chrome/PepperFlash/25.0.0.148/libpepflashplayer.so --ppapi-flash-version=25.0.0.148
 

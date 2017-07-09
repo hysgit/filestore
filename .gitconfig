@@ -1,6 +1,6 @@
 [user]
 	name = huangyue
-	email = hy@zizizizizi.com
+	email = huangyue306@gmail.com
 [alias]
 	st = status
 	ci = commit
@@ -29,3 +29,5 @@
 #	proxy = http://192.168.99.238:1080
 [color]
 	status = auto
+[push]
+	default = simple

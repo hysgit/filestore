@@ -4,7 +4,7 @@
 USER=root  
 PASSWORD='xcp^!#.0ZO-_@'
 DATABASE="rep"  
-HOSTNAME="182.254.152.12"  
+HOSTNAME="182.254.140.152"  
    
 WEBMASTER=1102401908@qq.com  
    

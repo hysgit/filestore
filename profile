@@ -32,6 +32,7 @@ if [ -d /etc/profile.d ]; then
   done
   unset i
 fi
+TZ='Asia/Shanghai'; export TZ
 
 export JAVA_HOME=/opt/java/jdk1.8.0_72
 export JRE_HOME=${JAVA_HOME}/jre
@@ -63,6 +64,3 @@ export PATH=$ANT_HOME/bin:$PATH
 
 export PATH=$PATH:/sbin
 
-#export ENV_SERVER_IP=127.0.0.1
-#export ENV_SERVER_PORT=10000
-#export ENV_SERVER_REAL_PORT=10000

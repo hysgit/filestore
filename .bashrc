@@ -111,7 +111,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export PATH=$PATH:/usr/local/emacs/bin
+export PATH=$PATH:/usr/local/emacs/bin:/home/hy/soft/bazel/bin:/home/hy/ndk/soft/matlab2016a/bin
+#Make sure you have "/home/hy/soft/bazel/bin" in your path. You can also activate bash
+#completion by adding the following line to your :
+#source /home/hy/soft/bazel/lib/bazel/bin/bazel-complete.bash
+
 #java
 export JAVA_HOME=/opt/java/jdk1.8.0_72
 export JRE_HOME=${JAVA_HOME}/jre
@@ -126,7 +130,7 @@ export PATH=$MAVEN_PATH:$PATH
 alias git='LANG=en_GB git'
 alias emacs="export LC_CTYPE=zh_CN.UTF-8;emacs -nw"
 
-export PATH=$PATH:/home/hy/sh/sf
+export PATH=$PATH:/home/hy/sh/sf:/usr/sbin/:/sbin
 
 #go
 export GOROOT=$HOME/soft/go
@@ -170,9 +174,6 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 # added by Anaconda2 4.2.0 installer
 #export PATH="/home/hy/soft/anaconda2/bin:$PATH"
 
-bbkj=/home/hy/workspace/company/bbkj
-
-
 function cd () {
   if [[ $# > 0 ]]; then
     if [ ${1:0:2} == '..' ]; then
@@ -187,6 +188,6 @@ function cd () {
   fi
 }
 
+#alias j='autojump'
 
-
-
+. /home/hy/sh/sf/z.sh
