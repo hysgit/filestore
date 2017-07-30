@@ -173,6 +173,8 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 # added by Anaconda2 4.2.0 installer
 #export PATH="/home/hy/soft/anaconda2/bin:$PATH"
+export PATH=$PATH:/home/hy/soft/node/bin
+
 
 function cd () {
   if [[ $# > 0 ]]; then
@@ -191,3 +193,5 @@ function cd () {
 #alias j='autojump'
 
 . /home/hy/sh/sf/z.sh
+
+

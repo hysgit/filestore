@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# echo "SSP: ${SSP}"
+
+# if [ $SSP ];then 
+# 	if [ $SSP -eq 'close' ];then
+# 		export SSP=open
+# 		sudo route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.105
+# 		sudo route del -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.1
+# 		sudo cp /etc/resolv.conf.l /etc/resolvconf/run/resolv.conf
+# 		echo 'open proxy....'
+# 	else
+# 		export SSP=close
+# 		sudo route del -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.105
+# 		sudo route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.1
+# 		sudo cp /etc/resolv.conf.c /etc/resolvconf/run/resolv.conf
+# 		echo 'close proxy...'
+# 	fi
+		
+# else
+# 	export SSP=open
+# 	sudo route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.105
+# 	sudo route del -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.1
+# 	sudo cp /etc/resolv.conf.l /etc/resolvconf/run/resolv.conf
+# 	echo "open proxy...."
+# fi
+
+sudo route del -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.112
+sudo route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.99.1
+sudo cp /etc/resolv.conf.c /etc/resolvconf/run/resolv.conf
+echo 'close proxy...'
+
+

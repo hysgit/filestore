@@ -290,6 +290,15 @@
         <command>nemo</command>
       </action>
     </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Lock Screen</name>
+        </startupnotify>
+        <command>slock</command>
+      </action>
+    </keybind>
     <!--keybindings for LXPanel -->
     <keybind key="W-r">
       <action name="Execute">
