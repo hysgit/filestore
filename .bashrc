@@ -130,7 +130,8 @@ export PATH=$MAVEN_PATH:$PATH
 alias git='LANG=en_GB git'
 alias emacs="export LC_CTYPE=zh_CN.UTF-8;emacs -nw"
 
-export PATH=$PATH:/home/hy/sh/sf:/usr/sbin/:/sbin
+export PATH=$PATH:/home/hy/sh/sf:/home/hy/sh/fq:/usr/sbin/:/sbin:/home/hy/sh/rdesktop
+
 
 #go
 export GOROOT=$HOME/soft/go
@@ -139,7 +140,7 @@ export PATH=$PATH:$GOROOT/bin
 
 #sbt
 export PATH=$PATH:/opt/sbt/bin
-
+alias grep='grep --color=auto'
 alias ll='ls -lah'
 
 function git_branch {
@@ -190,8 +191,5 @@ function cd () {
   fi
 }
 
-#alias j='autojump'
-
-. /home/hy/sh/sf/z.sh
 
 
