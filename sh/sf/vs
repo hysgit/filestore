@@ -1,0 +1,4 @@
+#!/bin/bash
+nohup /home/hy/soft/vscode/code  "$@" >>/dev/null  2>&1 &
+
+

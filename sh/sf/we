@@ -1,0 +1,2 @@
+#!/bin/bash
+netease-cloud-music --no-sandbox
