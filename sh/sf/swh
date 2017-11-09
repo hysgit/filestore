@@ -1,2 +1,2 @@
-#!/bin/sh
-sudo /usr/local/host-switcher/host-switcher
+cd /home/hy/soft/switchhosts
+./switchhosts
