@@ -135,7 +135,7 @@ export PATH=$PATH:/home/hy/sh/sf:/home/hy/sh/fq:/usr/sbin/:/sbin:/home/hy/sh/rde
 
 #go
 export GOROOT=$HOME/soft/go
-export GOPATH=/home/hy/soft/sharego
+export GOPATH=/home/hy/soft/sharego:/home/hy/workspace/go/wrk1:/home/hy/workspace/go/wrk2:/home/hy/workspace/go/wrk3
 export PATH=$PATH:$GOROOT/bin
 
 #sbt

@@ -10,6 +10,7 @@ do
         echo "ip地址发生变化,重启nginx"
         echo "原ip:${ip}"
         echo "新IP:${ip2}"
-        ip=ip2
+        ip=${ip2}
     fi
+    sleep 3
 done
