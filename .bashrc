@@ -153,7 +153,8 @@ function git_branch {
   fi
 }
 
-export PS1='\[\033[01;32m\]\u@\h\[\033[00m\][\[\033[01;36m\]\W\[\033[01;32m\]$(git_branch)\[\033[00m\]]\$ '
+export PS1='\[\033[1;33m\]\u\[\033[01;32m\]@\[\033[1;36m\]\h\[\033[00m\][\[\033[01;36m\]\W\[\033[01;32m\]$(git_branch)\[\033[00m\]]\$ '
+# export PS1='\[\033[01;32m\]\u@\h\[\033[00m\][\[\033[01;36m\]\W\[\033[01;32m\]$(git_branch)\[\033[00m\]]\$ '
 
 #alias define
 alias gc='git add -A;git commit -m '
@@ -193,3 +194,4 @@ function cd () {
 
 
 
+export dp=/home/hy/workspace/company/bbkj/deploy
